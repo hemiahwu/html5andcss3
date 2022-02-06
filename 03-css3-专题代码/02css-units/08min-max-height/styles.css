@@ -1,0 +1,28 @@
+/* 
+    height:auto;min-height;max-height;overflow
+*/
+
+
+.navbar {
+    background: blue;
+    height: 60px;
+    color: white;
+    font-size: 3rem;
+}
+
+.banner {
+    background:red;
+    /* height: calc(100vh - 60px); */
+    min-height: calc(100vh - 60px);
+    max-height:100vh;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.example {
+    background: green;
+    width: 10rem;
+    height: 25rem;
+    overflow: hidden;
+    overflow: scroll;
+}

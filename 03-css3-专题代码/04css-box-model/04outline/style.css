@@ -1,0 +1,42 @@
+
+/* 
+    width / height  
+    padding 盒子中的一部分 增加盒子的大小
+    margin  盒子外的一部分 与外部内容的距离
+        特点- 上下去最大值 左右相加
+
+    
+    border  盒子中的一部分 增加盒子的大小
+    outline 通过外边框设置盒子样式效果
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    margin: 3rem;
+}
+
+a {
+    background: #689f3f;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem 1.5rem;
+    text-transform: uppercase;
+    margin: 0 20px;
+}
+
+#one {
+    border: 0.2rem solid #222;
+    outline: 0.2rem solid red;
+    outline-offset: -10px;
+}
+
+#two {
+    outline-width: 0.2rem;
+    outline-color: #222;
+    outline-style: solid;
+    outline-offset: -10px;
+}
+

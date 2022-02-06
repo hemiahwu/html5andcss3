@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>盒子模型</title>
+    <style>
+      /* css样式初始化 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background: #f4f4f4;
+        border: 5px #777 solid;
+        width: 500px;
+        height: 200px;
+
+        /* 全写 */
+        padding: 20px;
+
+        /* 单写 */
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+        /* 简写 上 右 下 左*/
+        padding: 10px 20px 10px 20px;
+
+        /* 简写 上下 左右*/
+        padding: 10px 20px;
+
+        /* margin全写 */
+        margin: 20px;
+
+        /* margin单写 */
+        margin-top: 100px;
+        margin-bottom: 80px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        /* 简写 上 右 下 左*/
+        margin: 10px 20px 10px 20px;
+
+        /* 简写 上下 左右*/
+        margin: 10px 20px;
+
+        /* 将padding和border都算入宽高中 */
+        box-sizing: border-box;
+      }
+
+      /* body {
+        margin: 0;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>box one</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui laborum
+        officiis amet odit, porro sunt voluptatum libero. Quo, voluptas? Labore.
+      </p>
+    </div>
+    <div class="box">
+      <h3>box two</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui laborum
+        officiis amet odit, porro sunt voluptatum libero. Quo, voluptas? Labore.
+      </p>
+    </div>
+  </body>
+</html>

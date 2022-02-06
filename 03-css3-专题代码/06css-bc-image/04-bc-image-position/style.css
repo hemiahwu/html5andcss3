@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 300px;
+    color: white;
+    width: 100%;
+}
+
+.big-img {
+    background: url("./big-image.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 200px 200px; */
+    /* background-size: 20% auto; */
+    /* background-size: contain; */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.small-img {
+    background-image: url("./small-image.jpg");
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-repeat: round;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: 0 0; */
+    background-position: 50% 50%;
+    /* background-position: 100% 100%; */
+    background-position: top left;
+    background-position: top;
+    background-position: left;
+    background-position: right;
+    background-position: bottom;
+}
+.folder-img {
+    background-image: url("./images/folder-image.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}

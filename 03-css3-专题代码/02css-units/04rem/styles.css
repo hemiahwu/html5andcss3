@@ -1,0 +1,17 @@
+/* 
+  rem - 相对值, 基于根标签(html)
+  1rem = 基准值 (16px) * number (1)
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+#box-1 {
+    font-size: 20px;
+}
+
+#box-1 p {
+    font-size: 4rem; 
+}
+

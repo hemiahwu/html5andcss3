@@ -1,0 +1,140 @@
+body {
+  font: 14px/1.5 Helvetica;
+  color: #333;
+  min-width: 1190px;
+  background-color: #F4F4F4;
+}
+
+.w {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.clearfix::after,.clearfix::before{
+  content: '';
+  display: table;
+  clear: both;
+} 
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+
+._hidden{
+  display: none;
+}
+
+.img-list-btn{
+  display: block;
+  position: absolute;
+  z-index: 998;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 35px;
+  line-height: 35px;
+  background-color:rgba(0, 0, 0, .2);
+  color: #f9faf9;
+  cursor: pointer;
+}
+
+.img-list-btn i {
+  position: relative;
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-block;
+  width: 20px;
+  height: 35px;
+  text-align: center;
+}
+
+.img-list-btn:nth-of-type(2n){
+  right: 0;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.img-list-btn:nth-of-type(2n+1){
+  left: 0;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.img-list-btn:nth-of-type(2n) i{
+  right: -5px;
+}
+
+.img-list-btn:hover {
+  background-color:rgba(0, 0, 0, .4);
+}
+
+.small {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  transition: 0.25s all;
+}
+
+.banner-small-img-list:hover .small{
+  background-color:rgba(0, 0, 0, .2);
+  color: #f9faf9;
+}
+
+.chosen_background-color{
+  background-color: #D6291D!important;
+}
+
+.chosen_ranktab {
+  background-color: #D6291D!important;
+  color: #fff!important;
+}
+
+.chosen_redius{
+  color: #fff;
+  background: #D6291D;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.chosen_color{
+  color: #D6291D!important;
+}
+
+.transparent {
+  opacity: 1;
+  transition: 0.3s opacity;
+}
+
+.transparent:hover {
+  opacity: 0.8;
+}
+
+/* 标题样式 */
+.title{
+  position: absolute;
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  left: 20px;
+  top: 10px;
+}
+
+.title i {
+  font-weight: normal;
+  font-size: 24px;
+  transition: 0.2s color;
+}
+
+.title:hover i {
+  color: #D6291D;
+}
+
+

@@ -1,0 +1,23 @@
+/* 
+ display:inline-block;
+ 与行内元素共享一行
+ 浏览器支持 margin,width,height
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-size: 1.5rem;
+    background: green;
+    color: white;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    margin: 40px 10px;
+    display: inline-block;
+}

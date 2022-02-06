@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML5 新标签应用</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+        line-height: 1.4;
+      }
+
+      #header {
+        margin-bottom: 15px;
+        background: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      #main {
+        float: left;
+        width: 69%;
+      }
+
+      #sidebar {
+        float: right;
+        width: 29%;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      #footer {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .text-center {
+        display: block;
+        text-align: center;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header id="header" class="card">
+      <h1>米斯特吴</h1>
+      <p>专注于前端开发框架的课程设计</p>
+    </header>
+
+    <main id="main">
+      <!-- 欢迎模块 -->
+      <section id="welcome" class="card">
+        <h2>欢迎大家学习米斯特吴的课程</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          cupiditate itaque possimus numquam corporis odit deserunt voluptas
+          repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+          temporibus! Sed. <br />
+          <a href="#" class="text-center">了解更多</a>
+        </p>
+      </section>
+      <!-- 博客模块 -->
+      <section id="blog">
+        <h2>米斯特吴博客</h2>
+
+        <article class="article">
+          <h3>第一篇</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+          </p>
+        </article>
+        <article class="article">
+          <h3>第二篇</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- 右边栏 -->
+    <aside id="sidebar" class="card">
+      <h3>导航</h3>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html">主页</a></li>
+          <li><a href="about.html">关于</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </nav>
+      <hr />
+      <h3>联系我们</h3>
+      <ul>
+        <li><strong>地址:</strong> 北京市昌平区</li>
+        <li><strong>QQ:</strong> 27732357</li>
+        <li><strong>微信:</strong> 27732357</li>
+      </ul>
+    </aside>
+
+    <div class="clr"></div>
+
+    <!-- 底部 -->
+    <footer id="footer">
+      <p class="text-center">Copyright &copy; 米斯特吴 2020</p>
+    </footer>
+  </body>
+</html>

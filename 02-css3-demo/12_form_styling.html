@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Microsoft YaHei', '微软雅黑', STXihei;
+        background: #344a72;
+        color: #fff;
+        line-height: 1.8;
+      }
+      a {
+        text-decoration: none;
+      }
+      #container {
+        max-width: 400px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+      .form-wrap {
+        background: #fff;
+        color: #333;
+        padding: 15px 25px;
+      }
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+      .form-wrap .form-group {
+        margin-top: 15px;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: #ddd 1px solid;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: #49c1a2;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e;
+      }
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      footer a {
+        color: #49c1a2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>注册</h1>
+        <p>注册成为米斯特吴课程的会员</p>
+        <form>
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" name="ame" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="sex">性别</label>
+            <input type="text" name="sex" id="sex" />
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="password2">确认密码 </label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <button type="submit" class="btn">注册</button>
+          <p class="bottom-text">
+            当你注册该网站时,保证你所填写的信息
+            <a href="#">每一个 & 信息</a>完整
+            <a href="#">我们保证不会透露您的信息</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>已经有账户了? <a href="#">这里登录</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.big-img {
+    background: url("./big-image.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.small-img {
+    background: url("./images/folder-image.jpg") center/cover no-repeat fixed;
+}
+.folder-img {
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.1),
+        rgba(197, 104, 104, 0.3)
+        ), url("./big-image.jpg") center/cover no-repeat;
+}
+

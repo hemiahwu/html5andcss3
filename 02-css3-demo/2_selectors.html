@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS选择器</title>
+    <style>
+      /* 标签选择器 */
+      body {
+        background: #333;
+      }
+
+      /* .代表的是 class 类选择器 */
+      .primary-heading {
+        color: blue;
+      }
+      /* #代表的是 id 选择器 */
+      #welcome {
+        background: #f4f4f4;
+      }
+
+      /* 多选择器 */
+      #welcome,
+      #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      /* 嵌套选择器 */
+      #welcome p {
+        font-size: 20px;
+      }
+
+      #about {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">米斯特吴</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio libero
+        perspiciatis voluptates ratione quia cum labore, at quae! Eaque,
+        architecto?
+      </p>
+    </div>
+    <div id="about">
+      <h2>关于</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio libero
+        perspiciatis voluptates ratione quia cum labore, at quae! Eaque,
+        architecto?
+      </p>
+    </div>
+  </body>
+</html>

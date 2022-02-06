@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form表单</title>
+  </head>
+  <body>
+    <form action="process.php">
+      <!-- 文本 -->
+      <div>
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" value="米斯特吴" />
+      </div>
+
+      <!-- 邮箱 -->
+      <div>
+        <label for="email">邮箱</label>
+        <input type="email" name="email" id="email" placeholder="请输入邮箱" />
+      </div>
+
+      <!-- number -->
+      <div>
+        <label for="age">年龄</label>
+        <input type="number" name="age" id="age" placeholder="请输入年龄" />
+      </div>
+
+      <!-- date -->
+      <div>
+        <label for="birthday">生日</label>
+        <input
+          type="date"
+          name="birthday"
+          id="birthday"
+          placeholder="请输入birthday"
+        />
+      </div>
+
+      <!-- password -->
+      <div>
+        <label for="password">密码</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="请输入password"
+        />
+      </div>
+
+      <!-- textarea -->
+      <div>
+        <label for="message">信息</label>
+        <textarea name="message" id="message" cols="10" rows="2"></textarea>
+      </div>
+
+      <!-- select选项 -->
+      <div>
+        <label for="sex">性别</label>
+        <select name="sex" id="sex">
+          <option value="male">男</option>
+          <option value="female">女</option>
+          <option value="other">其他</option>
+        </select>
+      </div>
+
+      <!-- radio -->
+      <div>
+        <label for="membership">成员</label>
+        <input type="radio" name="membership" id="membership" value="vue" /> vue
+        <input type="radio" name="membership" id="membership" value="react" />
+        react
+        <input type="radio" name="membership" id="membership" value="node" />
+        node
+      </div>
+
+      <!-- checkbox -->
+      <div>
+        <label for="membership">c成员</label>
+        <input type="checkbox" name="membership" id="membership" value="vue" />
+        vue
+        <input
+          type="checkbox"
+          name="membership"
+          id="membership"
+          value="react"
+        />
+        react
+        <input type="checkbox" name="membership" id="membership" value="node" />
+        node
+      </div>
+
+      <!-- submit -->
+      <!-- button不会自动提交到后台去 -->
+      <input type="button" value="注册" />
+      <!-- submit会自动提交到form的action后台地址去 -->
+      <input type="submit" value="注册" />
+
+      <!-- reset -->
+      <button type="reset">重置</button>
+    </form>
+  </body>
+</html>

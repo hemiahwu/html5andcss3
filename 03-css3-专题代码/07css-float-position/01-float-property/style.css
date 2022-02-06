@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    border: 5px solid red;
+    padding: 10px;
+}
+
+/* img {
+    float: left;
+    float: right;
+} */
+.one {
+    float: left;
+}
+
+.two {
+    float: right;
+    height: 40px;
+}
+
+p {
+    /* clear: right; */
+    /* clear: left; */
+    clear: both;
+}

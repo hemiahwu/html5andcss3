@@ -1,0 +1,35 @@
+/* 
+ text-align 字体位置
+ text-indent  首行缩进
+*/
+
+
+body {
+    font-family:tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    text-align: left;
+    text-align: center;
+    text-align: right;
+}
+
+.main-heading {
+    font-style: italic;
+    text-align: left;
+}
+
+.sub-heading {
+    font-weight: 100;
+    text-align: center;
+}
+
+.one {
+    font-weight: bold;
+}
+
+.two {
+    font-weight: lighter;
+    font-style: oblique;
+    font-style: normal;
+    text-align: left;
+    text-indent: 6rem;
+}
+
