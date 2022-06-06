@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #222;
+}
+
+.container {
+    border: 5px solid black;
+}
+
+.cell {
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid red;
+    color: #fff;
+}
+
+.cell-1 {
+    background: blue;
+}
+
+.cell-2 {
+    background: orange;
+}
+
+.cell-3 {
+    background: green;
+}
+
+.cell-4 {
+    background: yellow;
+}
+
+.cell-5 {
+    background: purple;
+}

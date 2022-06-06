@@ -1,0 +1,65 @@
+.tour-card {
+    background: var(--ms-grey-10);
+    box-shadow: var(--light-shadow);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.tour-card:hover {
+    box-shadow: var(--dark-shadow);
+    transform: scale(1.02);
+}
+
+.tour-img-container {
+    position: relative;
+}
+
+.tour-img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.tour-date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    color: var(--ms-primary-1);
+    background: var(--ms-primary-8);
+    padding: 0.25rem 0.5rem;
+}
+
+.tour-info {
+    padding: 1.25rem 1.5rem;
+}
+
+.tour-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour-footer p {
+    line-height: 0;
+    margin-bottom: 0;
+    color: var(--ms-primary-5);
+}
+
+/* 768px 两列 */
+
+@media screen and (min-width:768px) {
+    .featured-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tour-card {
+        flex: 0 0 calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width:1170px) {
+    .tour-card {
+        flex: 0 0 calc(33.33% - 2rem);
+    }
+}

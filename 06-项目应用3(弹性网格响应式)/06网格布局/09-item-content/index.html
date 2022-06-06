@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 网格布局</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* align-items justify-items --- 容器*/
+        /* justify-self align-self --- 子元素 */
+        /* minmax() */
+        .container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr); */
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+
+            justify-items: flex-start;
+            justify-items: flex-end;
+            justify-items: center; */
+        }
+
+        .cell-1 {
+            /* justify-self: end;
+            justify-self: start; */
+            /* justify-self: center; */
+
+            /* align-self: flex-start;
+            align-self: flex-end; */
+            /* align-self: center; */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="cell cell-1">cell1</div>
+        <div class="cell cell-2">cell2</div>
+        <div class="cell cell-3">cell3</div>
+        <div class="cell cell-4">cell4</div>
+        <div class="cell cell-5">cell5</div>
+        <div class="cell cell-6">cell6</div>
+
+    </div>
+
+</body>
+
+</html>

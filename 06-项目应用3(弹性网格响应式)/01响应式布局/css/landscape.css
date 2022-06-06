@@ -1,0 +1,10 @@
+ /* 只要不超过500px,里面的样式都会生效 */
+ /* @media (max-height:500px) { */
+    body {
+        background: orange;
+    }
+
+    #landscape h1 {
+        display: block;
+    }
+/* } */

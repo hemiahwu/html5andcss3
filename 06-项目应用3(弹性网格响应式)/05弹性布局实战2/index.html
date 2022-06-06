@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/tour.css">
+    <title>米修 | 旅途</title>
+    <style>
+        .gallery-img-container {
+            position: relative;
+            background: var(--ms-primary-5);
+        }
+
+        .gallery-img {
+            height: 17rem;
+            object-fit: cover;
+            /* object-fit: contain; */
+            transition: var(--transition);
+        }
+
+        .gallery-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 2rem;
+            color: var(--ms-white);
+            transform: translate(-50%, -50%);
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .gallery-img-container:hover .gallery-img {
+            opacity: 0.5;
+        }
+
+        .gallery-img-container:hover .gallery-icon {
+            opacity: 1;
+        }
+
+        /* 768px */
+        @media screen and (min-width:768px) {
+            .gallery-center {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .gallery-img-container {
+                flex: 0 0 50%;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            /*  
+            flex-grow: 放大比例 默认是0 
+            flex-shrink 缩小比例 1 
+            flex-basis: 定义空间
+            */
+
+            .gallery-img-container {
+                flex: 0 0 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./images/logo.svg" class="nav-logo" alt="">
+                    <button class="nav-toggle" id="nav-toggle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li>
+                        <a href="#" class="nav-link">主页</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">简介</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">服务</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">功能</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">作品</a>
+                    </li>
+                </ul>
+                <ul class="nav-icons">
+                    <li>
+                        <a href="#" class="nav-icon">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-icon">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-icon">
+                            <i class="fa fa-qq"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- hero -->
+        <div class="hero">
+            <div class="hero-banner">
+                <h1>人在路上,心在故乡</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempore obcaecati ipsa nemo, neque
+                    pariatur?</p>
+                <a href="#" class="btn hero-btn">心灵旅程</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- about us -->
+    <section class="section">
+        <div class="section-title">
+            <h2>关于 <span>我们</span> </h2>
+        </div>
+        <div class="section-center about-center">
+            <article class="about-img">
+                <img src="./images/about.jpeg" class="about-photo" alt="">
+            </article>
+
+            <article class="about-info">
+                <h3>米修驴友 | 你我结伴而行</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet ipsa perspiciatis?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eveniet ipsa perspiciatis?</p>
+                <a href="#" class="btn">了解更多</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- 景点 -->
+    <section class="section">
+        <div class="section-title">
+            <h2>旅游 <span>景点</span></h2>
+        </div>
+        <div class="section-center featured-center">
+            <article class="tour-card">
+                <div class="tour-img-container">
+                    <img src="./images/tour-1.jpeg" class="tour-img" alt="">
+                    <p class="tour-date">2023年9月1号</p>
+                </div>
+                <div class="tour-info">
+                    <h4>西藏探险</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis in ut itaque quae
+                        praesentium!</p>
+                    <div class="tour-footer">
+                        <p>
+                            <span>
+                                <i class="fa fa-location-arrow"></i>
+                                中国,西藏
+                            </span>
+                        </p>
+                        <p>6日游</p>
+                        <p>¥5000</p>
+                    </div>
+                </div>
+            </article>
+            <article class="tour-card">
+                <div class="tour-img-container">
+                    <img src="./images/tour-1.jpeg" class="tour-img" alt="">
+                    <p class="tour-date">2023年9月1号</p>
+                </div>
+                <div class="tour-info">
+                    <h4>西藏探险</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis in ut itaque quae
+                        praesentium!</p>
+                    <div class="tour-footer">
+                        <p>
+                            <span>
+                                <i class="fa fa-location-arrow"></i>
+                                中国,西藏
+                            </span>
+                        </p>
+                        <p>6日游</p>
+                        <p>¥5000</p>
+                    </div>
+                </div>
+            </article>
+            <article class="tour-card">
+                <div class="tour-img-container">
+                    <img src="./images/tour-1.jpeg" class="tour-img" alt="">
+                    <p class="tour-date">2023年9月1号</p>
+                </div>
+                <div class="tour-info">
+                    <h4>西藏探险</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis in ut itaque quae
+                        praesentium!</p>
+                    <div class="tour-footer">
+                        <p>
+                            <span>
+                                <i class="fa fa-location-arrow"></i>
+                                中国,西藏
+                            </span>
+                        </p>
+                        <p>6日游</p>
+                        <p>¥5000</p>
+                    </div>
+                </div>
+            </article>
+            <article class="tour-card">
+                <div class="tour-img-container">
+                    <img src="./images/tour-1.jpeg" class="tour-img" alt="">
+                    <p class="tour-date">2023年9月1号</p>
+                </div>
+                <div class="tour-info">
+                    <h4>西藏探险</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis in ut itaque quae
+                        praesentium!</p>
+                    <div class="tour-footer">
+                        <p>
+                            <span>
+                                <i class="fa fa-location-arrow"></i>
+                                中国,西藏
+                            </span>
+                        </p>
+                        <p>6日游</p>
+                        <p>¥5000</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 旅拍 -->
+    <section>
+        <div class="gallery-center section-center">
+            <article class="gallery-img-container">
+                <img src="./images/tour-1.jpeg" class="gallery-img" alt="">
+                <a href="#" class="gallery-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </article>
+            <article class="gallery-img-container">
+                <img src="./images/tour-2.jpeg" class="gallery-img" alt="">
+                <a href="#" class="gallery-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </article>
+            <article class="gallery-img-container">
+                <img src="./images/tour-3.jpeg" class="gallery-img" alt="">
+                <a href="#" class="gallery-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </article>
+            <article class="gallery-img-container">
+                <img src="./images/tour-4.jpeg" class="gallery-img" alt="">
+                <a href="#" class="gallery-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </article>
+            <article class="gallery-img-container">
+                <img src="./images/tour-5.jpeg" class="gallery-img" alt="">
+                <a href="#" class="gallery-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </article>
+            <article class="gallery-img-container">
+                <img src="./images/tour-6.jpeg" class="gallery-img" alt="">
+                <a href="#" class="gallery-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </article>
+            <article class="gallery-img-container">
+                <img src="./images/tour-7.jpeg" class="gallery-img" alt="">
+                <a href="#" class="gallery-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </article>
+            <article class="gallery-img-container">
+                <img src="./images/tour-2.jpeg" class="gallery-img" alt="">
+                <a href="#" class="gallery-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
