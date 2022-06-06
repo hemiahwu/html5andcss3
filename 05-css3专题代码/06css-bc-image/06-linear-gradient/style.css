@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.one {
+    /* 从上到下，蓝色渐变到红色 */
+    background: linear-gradient(blue,red);
+}
+
+.two {
+    /* 从下到上，蓝色渐变到浅红色 */
+    background: linear-gradient(to top,blue,red,green,yellow,#f15025);
+}
+
+.three {
+    /* 从右下到左上、从蓝色渐变到红色 */
+    background: linear-gradient(45deg,blue,red);
+}
+
+.four {
+    background: linear-gradient(to top left,blue,red);
+}
+
+.five {
+    background: linear-gradient(blue 20%,red 70%);
+}
+
+.six {
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9));
+
+}

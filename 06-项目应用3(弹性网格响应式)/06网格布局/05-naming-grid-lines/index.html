@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 网格布局</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [start] 100px [col-1-end] 100px [col-2-end] 100px [end];
+            grid-template-rows: [start] 100px [row-1-end] 100px [row-2-end] 100px [end];
+            grid-gap: 1rem;
+            margin: 100px;
+        }
+
+        .cell-1 {
+            /* grid-column: start/end; */
+            /* grid-column: start/col-2-end; */
+            grid-column: start/3;
+            grid-row: start/row-2-end;
+        }
+
+        .cell-4 {
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="cell cell-1">cell1</div>
+        <div class="cell cell-2">cell2</div>
+        <div class="cell cell-3">cell3</div>
+        <div class="cell cell-4">cell4</div>
+        <div class="cell cell-5">cell5</div>
+        <div class="cell">cell6</div>
+        <div class="cell">cell7</div>
+    </div>
+
+</body>
+
+</html>

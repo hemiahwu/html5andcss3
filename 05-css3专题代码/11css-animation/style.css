@@ -1,0 +1,67 @@
+/* 
+Transtion 0 = 100%
+从开始状态 到 结束状态
+ANIMATION 0 1% 2% .... 100%
+多种状态
+animation-fill-mode 属性规定动画在播放之前或之后，其动画效果是否可见。
+*/
+
+div {
+    width: 200px;
+    height: 100px;
+    color: white;
+    margin: 10px;
+    opacity: 0;
+}
+
+.transition {
+    background: red;
+    transition: all 2s linear;
+}
+
+.transition:hover {
+    color: black;
+    background: yellow;
+    transform: translateX(100px);
+}
+
+.animation {
+    background: blue;
+    /* animation-name: move;
+    animation-duration:10s;
+    animation-iteration-count: 3; */
+
+    animation: move 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes move {
+    0% {
+        /* transform: translateX(20px); */
+        opacity: 0.1;
+    }
+
+    25% {
+        transform: translateX(100px);
+        background: green;
+        opacity:0.25;
+    }
+
+    50%{
+        transform: translateX(-200px);
+        background: yellow;
+        opacity: 0.5;
+    }
+
+    75%{
+        transform: translateX(100px);
+        background: purple;
+        opacity: 0.75;
+    }
+
+    100%{
+        transform: translateX(20px);
+        background: orange;
+        opacity: 1;
+    }
+}

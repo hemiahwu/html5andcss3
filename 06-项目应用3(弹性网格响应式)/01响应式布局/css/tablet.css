@@ -1,0 +1,10 @@
+/* 只要不超过768px并且不小于501px,里面的样式都会生效 */
+/* @media (min-width:501px) and (max-width: 768px) { */
+    body {
+        background: blue;
+    }
+
+    #tablet h1 {
+        display: block;
+    }
+/* } */

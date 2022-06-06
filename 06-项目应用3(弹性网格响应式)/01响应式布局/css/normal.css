@@ -1,0 +1,10 @@
+/* 只要不超过1200px并且不小于769px,里面的样式都会生效 */
+/* @media (min-width:769px) and (max-width: 1200px) { */
+    body {
+        background: green;
+    }
+
+    #normal h1 {
+        display: block;
+    }
+/* } */

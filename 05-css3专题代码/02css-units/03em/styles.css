@@ -1,0 +1,19 @@
+/* 
+    em - 相对的值, 基于父级元素
+    1em - 16px 浏览器默认值
+    1em = 基准值 (16px) * number (1) = 16px
+    2em = 基准值 (16px) * number (2) = 32px
+    2em = 基准值 (10px) * number (2) = 20px
+*/
+
+#box-1 {
+    font-size: 10px;
+}
+
+#box-1 p {
+    font-size: 2em; 
+}
+
+#box-1 ul {
+    font-size: 2em;
+}

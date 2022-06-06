@@ -1,0 +1,62 @@
+/* 
+
+伪元素选择器
+
+::first-line，为某个元素的第一行文字使用样式。
+::first-letter，为某个元素中的文字的首字母或第一个字使用样式。
+
+
+::before，在某个元素之前插入一些内容。
+::after，在某个元素之后插入一些内容。
+content:'' - required 必有的属性
+img - 不好使
+
+总结一下伪类与伪元素的特性及其区别：
+
+1）伪类本质上是为了弥补常规CSS选择器的不足，以便获取到更多信息；
+2）伪元素本质上是创建了一个有内容的虚拟容器；
+3）CSS3中伪类和伪元素的语法不同；
+4）可以同时使用多个伪类，而只能同时使用一个伪元素；
+
+*/
+
+div {
+    width: 70vw;
+    margin: 100px auto;
+    position: relative;
+}
+img {
+    width: 100%;
+    display: block;
+}
+
+div::before{
+    content:"";
+    border: 2px solid grey;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: -20px;
+    left: -20px;
+    z-index: -2;
+    transition: all 0.5s linear;
+}
+
+div::after{
+    content:"";
+    border: 2px solid grey;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: -10px;
+    left: -10px;
+    z-index: -2;
+    transition: all 0.5s linear;
+}
+
+div:hover::after,div:hover::before{
+    top: 0;
+    left: 0;
+}

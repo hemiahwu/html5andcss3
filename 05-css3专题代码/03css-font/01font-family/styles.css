@@ -1,0 +1,20 @@
+/* 
+font-size - 字体大小
+font-family - 形容某个元素的字体形式
+
+font-family 用于某个元素的字体族名称的一个优先表。浏览器会使用它可识别的第一个值。
+
+有两种类型的字体系列名称：
+
+指定的系列名称：具体字体的名称，比如："times"、"courier"、"arial"。
+通常字体系列名称：比如："serif"、"sans-serif"、"cursive"、"fantasy"、"monospace"
+*/
+
+body {
+    font-family:tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;;
+}
+
+h1 {
+    font-family: "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-size: 50px;
+}
